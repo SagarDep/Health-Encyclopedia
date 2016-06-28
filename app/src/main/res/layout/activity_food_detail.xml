@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/view_titlebar"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/img_intro_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp">
+
+                <ImageView
+                    android:id="@+id/food_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_img"/>
+
+                <TextView
+                    android:id="@+id/food_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/BLACK_A30"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="Summary"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/food_menu_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_intro_view"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/food_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp"
+                    tools:text="Menu"/>
+
+                <TextView
+                    android:id="@+id/food_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/gray"
+                    android:textSize="11sp"
+                    tools:text="Bar"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/lightgray"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/food_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/food_menu_bar_view"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/view_empty"/>
+
+    <include layout="@layout/view_failed"/>
+
+</LinearLayout>

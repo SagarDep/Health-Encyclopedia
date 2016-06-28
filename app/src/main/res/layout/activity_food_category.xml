@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/view_titlebar"/>
+
+    <com.love_cookies.cookie_library.Widget.LoadAndRefreshView
+        android:id="@+id/load_and_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="auto_fit"
+            android:gravity="center"/>
+
+    </com.love_cookies.cookie_library.Widget.LoadAndRefreshView>
+
+    <include layout="@layout/view_empty"/>
+
+    <include layout="@layout/view_failed"/>
+
+</LinearLayout>

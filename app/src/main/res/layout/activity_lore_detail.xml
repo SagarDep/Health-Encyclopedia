@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_titlebar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lore_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/lore_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lore_title"
+                android:padding="5dp"
+                android:textColor="@color/gray"
+                android:textSize="11sp"
+                tools:text="ClassName" />
+
+            <TextView
+                android:id="@+id/lore_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lore_class_name"
+                android:padding="5dp"
+                android:textColor="@color/gray"
+                android:textSize="11sp"
+                tools:text="Author" />
+
+            <TextView
+                android:id="@+id/lore_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lore_class_name"
+                android:layout_toRightOf="@id/lore_author"
+                android:padding="5dp"
+                android:textColor="@color/gray"
+                android:textSize="11sp"
+                tools:text="Time" />
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/lore_author"
+                android:background="@color/lightgray" />
+
+            <TextView
+                android:id="@+id/lore_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_view"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:text="Message" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/view_empty"/>
+
+    <include layout="@layout/view_failed"/>
+
+</LinearLayout>

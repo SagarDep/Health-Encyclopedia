@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/view_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+                android:id="@+id/item_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:MianMenu_Icon="@drawable/main_food"
+                custom:MianMenu_Intro="@string/main_food_intro"
+                custom:MianMenu_Title="@string/main_food_title" />
+
+            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+                android:id="@+id/item_knowledge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:MianMenu_Icon="@drawable/main_knowledge"
+                custom:MianMenu_Intro="@string/main_knowledge_intro"
+                custom:MianMenu_Title="@string/main_knowledge_title" />
+
+            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+                android:id="@+id/item_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:MianMenu_Icon="@drawable/main_question"
+                custom:MianMenu_Intro="@string/main_question_intro"
+                custom:MianMenu_Title="@string/main_question_title" />
+
+            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+                android:id="@+id/item_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:MianMenu_Icon="@drawable/main_search"
+                custom:MianMenu_Intro="@string/main_search_intro"
+                custom:MianMenu_Title="@string/main_search_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/main_wait_more"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

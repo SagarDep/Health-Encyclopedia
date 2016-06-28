@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_titlebar" />
+
+    <com.love_cookies.cookie_library.Widget.LoadAndRefreshView
+        android:id="@+id/load_and_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+
+    </com.love_cookies.cookie_library.Widget.LoadAndRefreshView>
+
+    <include layout="@layout/view_empty"/>
+
+    <include layout="@layout/view_failed"/>
+
+</LinearLayout>

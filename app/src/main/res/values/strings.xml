@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">健康百科</string>
+    <string name="app_intro">健康百科——随时随地，掌握健康生活</string>
+    <string name="app_right">love-cookies\nCopyright © 2016 XIEKUN .All Rights Reserved</string>
+    <string name="author">解坤 | Cookie</string>
+    <string name="phone">15651990315</string>
+    <string name="qq">499721061</string>
+    <string name="weixin">kun13142</string>
+    <string name="mail">tsubasa-kun@foxmail.com</string>
+    <string name="home_page">http://love-cookies.com</string>
+    <string name="company">爱曲奇工作室 | love-cookies</string>
+    <string name="web_site">http://love-cookies.com</string>
+
+    <string name="network_disabled">网络不可用</string>
+    <string name="waiting_tip">数据加载中...</string>
+    <string name="loading_failed">数据加载失败</string>
+    <string name="try_again_tip">数据加载失败啦，点击重新试试哦~</string>
+    <string name="empty_tip">没有数据哎~</string>
+
+    <string name="main_food_title">食疗大全</string>
+    <string name="main_food_intro">只要是食品都有它的功能与疗效，这里收集了关于食品的简介，功能疗效，最新的食品健康，最新的生活食品，提供开放的健康食疗食品，让我们更加深入的了解我们身边的没一样食物。</string>
+
+    <string name="main_knowledge_title">健康知识</string>
+    <string name="main_knowledge_intro">收集全方面的健康知识，打造专业的知识文化提供平台。以最全新的方式， 提供专业的文化知识。</string>
+
+    <string name="main_question_title">健康一问</string>
+    <string name="main_question_intro">所有的疑难问题，所有的纠结困惑，所有的关于健康的问题，这里都能给你提供答案。</string>
+
+    <string name="main_search_title">病状查找</string>
+    <string name="main_search_intro">感冒了？还是发烧了？不能确定自己到底哪里不舒服，到底生了什么病。来这里看看哪些是和你症状一样的，对号入座哦。</string>
+
+    <string name="main_wait_more">更多功能，敬请期待...</string>
+
+    <string name="search_title">搜索</string>
+    <string name="search_keyword_hint">请输入查询关键字</string>
+    <string name="search_btn_text">搜索</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新...</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_nodate">已加载全部</string>
+
+    <string name="exit_tip">再按一次退出</string>
+
+    <string name="setting_title">设置</string>
+    <string name="setting_version">版本信息</string>
+    <string name="setting_about">关于软件</string>
+    <string name="setting_support">数据支持</string>
+    <string name="about_app">软件信息</string>
+    <string name="about_author">作者信息</string>
+
+    <string name="support_yi18">医药吧</string>
+    <string name="support_apix">apix.cn</string>
+
+</resources>

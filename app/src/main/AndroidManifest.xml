@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.love.cookies.doctor" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App.DoctorApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/CookieTheme" >
+        <receiver android:name=".Receiver.NetWorkReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".View.Activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.Activity.MainActivity" />
+        <activity
+            android:name=".View.Activity.FoodMainActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.FoodDetailActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.FoodCategoryActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.SearchActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.LoreMainActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.LoreCategoryActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.LoreDetailActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.AskMainActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.AskCategoryActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.AskDetailActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.SymptomMainActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.SymptomCategoryActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.SymptomDetailActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.SettingActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.VersionActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.AboutActivity" >
+        </activity>
+        <activity
+            android:name=".View.Activity.SupportActivity" >
+        </activity>
+    </application>
+
+</manifest>
