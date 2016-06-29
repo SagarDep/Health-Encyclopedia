@@ -1,6 +1,6 @@
 package com.love.cookies.health_encyclopedia.Presenter;
 
-import com.love.cookies.health_encyclopedia.App.DoctorApplication;
+import com.love.cookies.health_encyclopedia.App.HEApplication;
 import com.love_cookies.cookie_library.Application.ActivityCollections;
 import com.love_cookies.cookie_library.Utils.ToastUtils;
 
@@ -26,7 +26,7 @@ public class SearchPresenter {
     }
 
     public void getSearchResult(String api, String key, final int page, String keyword) {
-        if(DoctorApplication.getInstance().checkNetwork()) {
+        if(HEApplication.getInstance().checkNetwork()) {
             iSearch.showLoading();
             searchBiz.doSearch(api, key, page, keyword, new CallBack<SearchBean>() {
                 @Override

@@ -16,19 +16,19 @@ import org.xutils.x;
  *
  * Application类
  */
-public class DoctorApplication extends Application {
+public class HEApplication extends Application {
 
     private static Context context;
-    private static DoctorApplication instance;
+    private static HEApplication instance;
 
     /**
      * 获取当前的Application
      *
      * @return Application
      */
-    public static DoctorApplication getInstance() {
+    public static HEApplication getInstance() {
         if (instance == null) {
-            instance = new DoctorApplication();
+            instance = new HEApplication();
         }
         return instance;
     }

@@ -1,6 +1,6 @@
 package com.love.cookies.health_encyclopedia.Presenter;
 
-import com.love.cookies.health_encyclopedia.App.DoctorApplication;
+import com.love.cookies.health_encyclopedia.App.HEApplication;
 import com.love_cookies.cookie_library.Application.ActivityCollections;
 import com.love_cookies.cookie_library.Utils.ToastUtils;
 
@@ -26,7 +26,7 @@ public class SymptomDetailPresenter {
     }
 
     public void getSymptomDetail(final int id) {
-        if(DoctorApplication.getInstance().checkNetwork()) {
+        if(HEApplication.getInstance().checkNetwork()) {
             iSymptomDetail.showLoading();
             symptomDetailBiz.getSymptomDetail(id, new CallBack<SymptomDetailBean>() {
                 @Override

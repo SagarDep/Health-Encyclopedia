@@ -1,6 +1,6 @@
 package com.love.cookies.health_encyclopedia.Presenter;
 
-import com.love.cookies.health_encyclopedia.App.DoctorApplication;
+import com.love.cookies.health_encyclopedia.App.HEApplication;
 import com.love_cookies.cookie_library.Application.ActivityCollections;
 import com.love_cookies.cookie_library.Utils.ToastUtils;
 
@@ -26,7 +26,7 @@ public class AskDetailPresenter {
     }
 
     public void getAskDetail(int id) {
-        if(DoctorApplication.getInstance().checkNetwork()) {
+        if(HEApplication.getInstance().checkNetwork()) {
             iAskDetail.showLoading();
             askDetailBiz.getAskDetail(id, new CallBack<AskDetailBean>() {
                 @Override
