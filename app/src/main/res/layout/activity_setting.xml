@@ -13,21 +13,21 @@
         android:layout_marginTop="10dp"
         android:background="@color/lightgray" />
 
-    <com.love.cookies.doctor.View.Wedget.SettingItem
+    <com.love.cookies.health_encyclopedia.View.Wedget.SettingItem
         android:id="@+id/version"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         custom:Setting_Title="@string/setting_version"
         custom:Setting_Icon="@drawable/version_icon"/>
 
-    <com.love.cookies.doctor.View.Wedget.SettingItem
+    <com.love.cookies.health_encyclopedia.View.Wedget.SettingItem
         android:id="@+id/about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         custom:Setting_Title="@string/setting_about"
         custom:Setting_Icon="@drawable/about_icon"/>
 
-    <com.love.cookies.doctor.View.Wedget.SettingItem
+    <com.love.cookies.health_encyclopedia.View.Wedget.SettingItem
         android:id="@+id/support"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

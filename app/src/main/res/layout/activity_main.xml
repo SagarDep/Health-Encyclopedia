@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+            <com.love.cookies.health_encyclopedia.View.Wedget.MianMenuItem
                 android:id="@+id/item_food"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
                 custom:MianMenu_Intro="@string/main_food_intro"
                 custom:MianMenu_Title="@string/main_food_title" />
 
-            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+            <com.love.cookies.health_encyclopedia.View.Wedget.MianMenuItem
                 android:id="@+id/item_knowledge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 custom:MianMenu_Intro="@string/main_knowledge_intro"
                 custom:MianMenu_Title="@string/main_knowledge_title" />
 
-            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+            <com.love.cookies.health_encyclopedia.View.Wedget.MianMenuItem
                 android:id="@+id/item_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 custom:MianMenu_Intro="@string/main_question_intro"
                 custom:MianMenu_Title="@string/main_question_title" />
 
-            <com.love.cookies.doctor.View.Wedget.MianMenuItem
+            <com.love.cookies.health_encyclopedia.View.Wedget.MianMenuItem
                 android:id="@+id/item_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
